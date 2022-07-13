@@ -18,3 +18,16 @@ garis.addEventListener('click', function(){
     garis.classList.toggle('garis-active');
     navMenu.classList.toggle('hidden');
 });
+
+import { Fancybox } from "@fancyapps/ui";
+
+Fancybox.bind('[data-fancybox="gallery"]', {
+  Thumbs: false,
+  Toolbar: false,
+
+  Image: {
+    zoom: false,
+    click: false,
+  },
+});
+  

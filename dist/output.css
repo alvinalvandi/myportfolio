@@ -844,12 +844,6 @@ video {
   border-color: rgb(51 65 85 / var(--tw-border-opacity));
 }
 
-.border-x-slate-700 {
-  --tw-border-opacity: 1;
-  border-left-color: rgb(51 65 85 / var(--tw-border-opacity));
-  border-right-color: rgb(51 65 85 / var(--tw-border-opacity));
-}
-
 .bg-transparent {
   background-color: transparent;
 }
@@ -969,6 +963,10 @@ video {
   text-align: center;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -1002,10 +1000,6 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-
-.text-\[0\.80rem\] {
-  font-size: 0.80rem;
 }
 
 .text-xs {
@@ -1152,6 +1146,30 @@ body {
 .garis-active > span:nth-child(3) {
   --tw-rotate: -45deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+a[data-fancybox] img {
+  cursor: zoom-in;
+}
+
+.fancybox__container {
+  --fancybox-bg: rgba(17, 6, 25, 0.85);
+}
+
+.fancybox__container .fancybox__content {
+  /* Create white border around the image */
+  box-sizing: content-box;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 6px;
+  color: #374151;
+  box-shadow: 0 8px 23px rgb(0 0 0 / 50%);
+}
+
+.fancybox__caption {
+  max-width: 80%;
+  /* Prevent opacity change when dragging up/down */
+  --fancybox-opacity: 1;
 }
 
 .hover\:border-primary:hover {
