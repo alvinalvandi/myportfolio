@@ -1148,30 +1148,6 @@ body {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-a[data-fancybox] img {
-  cursor: zoom-in;
-}
-
-.fancybox__container {
-  --fancybox-bg: rgba(17, 6, 25, 0.85);
-}
-
-.fancybox__container .fancybox__content {
-  /* Create white border around the image */
-  box-sizing: content-box;
-  padding: 1rem;
-  background: #fff;
-  border-radius: 6px;
-  color: #374151;
-  box-shadow: 0 8px 23px rgb(0 0 0 / 50%);
-}
-
-.fancybox__caption {
-  max-width: 80%;
-  /* Prevent opacity change when dragging up/down */
-  --fancybox-opacity: 1;
-}
-
 .hover\:border-primary:hover {
   --tw-border-opacity: 1;
   border-color: rgb(251 191 36 / var(--tw-border-opacity));

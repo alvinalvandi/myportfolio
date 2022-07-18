@@ -13,6 +13,6 @@
     "tailwindcss": "^3.1.4"
   },
   "dependencies": {
-    "@fancyapps/ui": "^4.0.27"
+    "lightbox2": "^2.11.3"
   }
 }
